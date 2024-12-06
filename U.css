@@ -1,3 +1,4 @@
+/* 全局样式 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,19 +8,23 @@ body {
   flex-direction: column;
 }
 
+/* 页眉和页脚样式 */
 header, footer {
+  text-align: center; /* 内容居中对齐 */
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1em;
 }
 
+/* 购物车容器样式 */
 .cart-container {
   flex: 1;
   width: 80%;
   margin: 0 auto;
 }
 
+/* 购物车商品样式 */
 .cart-items {
   background-color: #f2f2f2;
   border-collapse: collapse;
@@ -27,6 +32,7 @@ header, footer {
   margin-bottom: 20px;
 }
 
+/* 购物车表头和表格数据样式 */
 .cart-items th, .cart-items td {
   border: 1px solid #ddd;
   padding: 12px;
@@ -38,10 +44,12 @@ header, footer {
   color: white;
 }
 
+/* 奇数行背景颜色 */
 .cart-items tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
 
+/* 按钮样式 */
 .button {
   background-color: #7ec8f0;
   border: none;
@@ -52,23 +60,29 @@ header, footer {
   border-radius: 4px;
 }
 
+/* 购物车样式 */
 .shopping-cart {
   margin-top: 20px;
 }
 
+/* 总计样式 */
 .total {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
+/* 购物车表格单元格样式 */
 .shopping-cart table td {
   padding-right: 20px;
 }
 
+/* 页脚样式 */
 footer {
   flex-shrink: 0;
 }
+
+/* 导航菜单样式 */
 nav ul {
 list-style: none;
 padding: 0;
@@ -87,6 +101,7 @@ text-decoration: none;
 color: #333;
 }
 
+/* 下拉菜单样式 */
 .dropdown-menu {
 display: none;
 position: absolute;
@@ -98,9 +113,12 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 display: block;
 }
 
+/* 鼠标悬停显示下拉菜单 */
 .dropdown:hover .dropdown-menu {
 display: block;
 }
+
+/* 注册表单样式 */
 .registration-form {
   max-width: 300px;
   margin: 2em auto;
@@ -110,15 +128,18 @@ display: block;
   text-align: center;
 }
 
+/* 注册表单标题样式 */
 .registration-form h2 {
   margin-bottom: 1em;
 }
 
+/* 表单布局样式 */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* 文本输入框样式 */
 input[type="text"] {
   padding: 0.5em;
   margin-bottom: 1em;
@@ -126,6 +147,7 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+/* 按钮样式 */
 button {
   background-color: #72d4e1;
   color: white;
@@ -135,13 +157,17 @@ button {
   cursor: pointer;
 }
 
+/* 鼠标悬停按钮样式 */
 button:hover {
   background-color: #57d8dc;
 }
+
+/* 主体样式 */
 main {
   padding: 2em;
 }
 
+/* 各种内容区域样式 */
 .search-section, .instructor-callout, .learn-daily {
   margin-bottom: 2em;
   padding: 1em;
@@ -149,6 +175,7 @@ main {
   border: 1px solid #e7e7e7;
 }
 
+/* 课程样式 */
 .course {
   background-color: #f7f7f7;
   border: 1px solid #ddd;
@@ -158,16 +185,24 @@ main {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   text-align: center;
 }
+
+/* 课程首个元素样式 */
 .course:first-child {
   margin-left: 0; /* Remove left margin for the first course */
 }
+
+/* 课程最后一个元素样式 */
 .course:last-child {
   margin-right: 0; /* Remove right margin for the last course */
 }
+
+/* 课程标题样式 */
 .course h3 {
   margin: 0;
   padding-bottom: 5px;
 }
+
+/* 添加到购物车链接样式 */
 .add-to-cart {
   background-color: #88c6ef;
   color: white;
@@ -176,10 +211,14 @@ main {
   display: inline-block;
   margin-top: 5px;
 }
+
+/* 鼠标悬停添加到购物车样式 */
 .add-to-cart:hover {
   background-color: #a9d6f4;
   cursor: pointer;
 }
+
+/* 容器样式 */
 .container {
   display: flex;
   justify-content: center; /* Center the courses container */
@@ -187,15 +226,18 @@ main {
   padding: 0;
 }
 
+/* 关于我们部分样式 */
 .about-us {
   text-align: center;
   margin-top: 20px;
 }
 
+/* 关于我们标题样式 */
 .about-us h2 {
   color: #333;
 }
 
+/* 关于我们段落样式 */
 .about-us p {
   max-width: 800px;
   margin: auto;
@@ -203,8 +245,7 @@ main {
   line-height: 1.6;
 }
 
-/* Add to your existing CSS */
-
+/* 文章样式 */
 article {
   margin-bottom: 2em;
   padding: 1em;
@@ -212,33 +253,31 @@ article {
   border: 1px solid #e7e7e7;
 }
 
+/* 文章标题样式 */
 article h3 {
   color: #333;
   margin-bottom: 0.5em;
 }
 
+/* 联系信息区域样式 */
 .contact-info {
   text-align: center;
   background-color: #e9ecef;
 }
 
-/* Style the paragraphs within the articles */
+/* 文章内部段落样式 */
 article p {
   line-height: 1.6;
   color: #333;
 }
 
-/* Style the "Get in Touch" section */
+/* 联系信息标题样式 */
 .contact-info h3 {
   text-align: center;
   color: #007bff;
 }
 
-
-
-
-/* Add to your existing CSS */
-
+/* 项目容器样式 */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -247,17 +286,19 @@ article p {
   padding: 20px;
 }
 
+/* 单个项目样式 */
 .project {
   flex: 1;
   min-width: 300px;
   max-width: 350px;
   border: 1px solid #ddd;
   border-radius: 5px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* 项目图片样式 */
 .project-image {
   max-width: 100%;
   height: auto;
@@ -265,6 +306,7 @@ article p {
   margin-bottom: 10px;
 }
 
+/* 按钮样式 */
 .btn {
   display: inline-block;
   background-color: #81c4f1;
@@ -276,17 +318,20 @@ article p {
   transition: background-color 0.3s ease;
 }
 
+/* 鼠标悬停按钮样式 */
 .btn:hover {
   background-color:
 }
 
-/* Responsive design */
+/* 响应式设计 */
 @media (max-width: 768px) {
   .project {
     max-width: 100%;
   }
 } 
- .navbar {  
+
+/* 导航栏样式 */
+.navbar {  
   display: flex;  
   justify-content: space-between;  
   align-items: center;   
@@ -294,7 +339,7 @@ article p {
   padding: 10px 0; 
 }  
 
-
+/* 导航链接样式 */
 .navbar a {  
   color: #f2f2f2;  
   text-decoration: none;  
@@ -302,6 +347,7 @@ article p {
   transition: background-color 0.3s ease;  
 }  
 
+/* 鼠标悬停导航链接样式 */
 .navbar a:hover {  
   background-color: #ddd;  
-  color: black;  
+  color: black;
